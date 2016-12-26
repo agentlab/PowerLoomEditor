@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" name="ru.agentlab.oomph.launcher.printservice">
-   <implementation class="ru.agentlab.oomph.launcher.PrintServiceImpl"/>
-   <service>
-      <provide interface="ru.agentlab.oomph.launcher.PrintService"/>
-   </service>
-</scr:component>
