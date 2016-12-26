@@ -1,0 +1,34 @@
+package ru.agentlab.oomph.launcher.panes
+
+import javafx.scene.control.TitledPane
+import javafx.scene.control.TreeView
+import javafx.scene.control.TreeItem
+import ru.agentlab.oomph.launcher.paneControllers.ModulesLeftPaneController
+import ru.agentlab.oomph.launcher.MainApplication
+
+component ModulesPane controlledby ModulesLeftPaneController {
+	TitledPane {
+		text : const MainApplication#MODULES_PANE_NAME,
+		prefHeight : 300,
+		prefWidth : 500,
+		content : TreeView < String > {
+			root : TreeItem < String > {
+				value : "Parent",
+				children : [
+					TreeItem < String > {
+						value : "Child one",
+						children : TreeItem < String > {
+							value : "Very far leaf"
+						}
+					},
+					TreeItem < String > {
+						value : "Child two"
+					},
+					TreeItem < String > {
+						value : "Child three"
+					}
+				]
+			}
+		}
+	}
+}

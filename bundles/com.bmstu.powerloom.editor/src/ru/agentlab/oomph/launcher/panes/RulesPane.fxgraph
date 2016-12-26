@@ -1,0 +1,16 @@
+package ru.agentlab.oomph.launcher.panes
+
+import ru.agentlab.oomph.launcher.paneControllers.RulesPanePaneController
+import javafx.scene.control.TitledPane
+import ru.agentlab.oomph.launcher.MainApplication
+import javafx.scene.control.ListView
+import edu.isi.stella.Stella_Object
+
+
+component RulesPane controlledby RulesPanePaneController {
+	TitledPane {
+		text : const MainApplication#RULES_PANE_NAME,
+		prefHeight : 300,
+		content : ListView<Stella_Object>
+	}
+}

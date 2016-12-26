@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pde version="3.5"?>
+
+<product name="PowerLoom Editor" uid="com.bmstu.powerloom.editor.product" id="com.bmstu.powerloom.editor.product" application="com.bmstu.powerloom.editor.application" version="1.0.0.qualifier" useFeatures="false" includeLaunchers="true">
+
+   <configIni use="default">
+   </configIni>
+
+   <launcherArgs>
+      <programArgs>-consoleLog -nosplash
+      </programArgs>
+      <vmArgs>-Dosgi.framework.extensions=org.eclipse.fx.osgi
+      </vmArgs>
+      <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts
+      </vmArgsMac>
+   </launcherArgs>
+
+   <windowImages/>
+
+   <launcher>
+      <solaris/>
+      <win useIco="false">
+         <bmp/>
+      </win>
+   </launcher>
+
+   <vm>
+   </vm>
+
+   <plugins>
+      <plugin id="ch.qos.logback.classic"/>
+      <plugin id="ch.qos.logback.core"/>
+      <plugin id="ch.qos.logback.slf4j" fragment="true"/>
+      <plugin id="com.bmstu.powerloom.editor"/>
+      <plugin id="com.google.guava"/>
+      <plugin id="com.ibm.icu"/>
+      <plugin id="edu.isi.powerloom"/>
+      <plugin id="edu.isi.sdbc"/>
+      <plugin id="edu.isi.stella"/>
+      <plugin id="javax.annotation"/>
+      <plugin id="javax.annotation.jre"/>
+      <plugin id="javax.inject"/>
+      <plugin id="javax.xml"/>
+      <plugin id="javax.xml.jre"/>
+      <plugin id="org.apache.commons.lang"/>
+      <plugin id="org.apache.felix.gogo.runtime"/>
+      <plugin id="org.apache.felix.gogo.shell"/>
+      <plugin id="org.eclipse.core.contenttype"/>
+      <plugin id="org.eclipse.core.databinding"/>
+      <plugin id="org.eclipse.core.databinding.observable"/>
+      <plugin id="org.eclipse.core.databinding.property"/>
+      <plugin id="org.eclipse.core.jobs"/>
+      <plugin id="org.eclipse.core.runtime"/>
+      <plugin id="org.eclipse.e4.core.contexts"/>
+      <plugin id="org.eclipse.e4.core.di"/>
+      <plugin id="org.eclipse.e4.core.di.annotations"/>
+      <plugin id="org.eclipse.e4.core.services"/>
+      <plugin id="org.eclipse.equinox.app"/>
+      <plugin id="org.eclipse.equinox.common"/>
+      <plugin id="org.eclipse.equinox.console"/>
+      <plugin id="org.eclipse.equinox.ds"/>
+      <plugin id="org.eclipse.equinox.event"/>
+      <plugin id="org.eclipse.equinox.launcher"/>
+      <plugin id="org.eclipse.equinox.launcher.cocoa.macosx.x86_64" fragment="true"/>
+      <plugin id="org.eclipse.equinox.launcher.gtk.aix.ppc" fragment="true"/>
+      <plugin id="org.eclipse.equinox.launcher.gtk.aix.ppc64" fragment="true"/>
+      <plugin id="org.eclipse.equinox.launcher.gtk.hpux.ia64" fragment="true"/>
+      <plugin id="org.eclipse.equinox.launcher.gtk.linux.ppc" fragment="true"/>
+      <plugin id="org.eclipse.equinox.launcher.gtk.linux.ppc64" fragment="true"/>
+      <plugin id="org.eclipse.equinox.launcher.gtk.linux.ppc64le" fragment="true"/>
+      <plugin id="org.eclipse.equinox.launcher.gtk.linux.s390" fragment="true"/>
+      <plugin id="org.eclipse.equinox.launcher.gtk.linux.s390x" fragment="true"/>
+      <plugin id="org.eclipse.equinox.launcher.gtk.linux.x86" fragment="true"/>
+      <plugin id="org.eclipse.equinox.launcher.gtk.linux.x86_64" fragment="true"/>
+      <plugin id="org.eclipse.equinox.launcher.gtk.solaris.sparcv9" fragment="true"/>
+      <plugin id="org.eclipse.equinox.launcher.gtk.solaris.x86_64" fragment="true"/>
+      <plugin id="org.eclipse.equinox.launcher.win32.win32.x86" fragment="true"/>
+      <plugin id="org.eclipse.equinox.launcher.win32.win32.x86_64" fragment="true"/>
+      <plugin id="org.eclipse.equinox.preferences"/>
+      <plugin id="org.eclipse.equinox.region" fragment="true"/>
+      <plugin id="org.eclipse.equinox.registry"/>
+      <plugin id="org.eclipse.equinox.simpleconfigurator"/>
+      <plugin id="org.eclipse.equinox.transforms.hook" fragment="true"/>
+      <plugin id="org.eclipse.equinox.util"/>
+      <plugin id="org.eclipse.equinox.weaving.hook" fragment="true"/>
+      <plugin id="org.eclipse.fx.core"/>
+      <plugin id="org.eclipse.fx.core.databinding"/>
+      <plugin id="org.eclipse.fx.core.di"/>
+      <plugin id="org.eclipse.fx.core.di.context"/>
+      <plugin id="org.eclipse.fx.core.fxml"/>
+      <plugin id="org.eclipse.fx.core.slf4j"/>
+      <plugin id="org.eclipse.fx.javafx"/>
+      <plugin id="org.eclipse.fx.osgi" fragment="true"/>
+      <plugin id="org.eclipse.fx.osgi.util"/>
+      <plugin id="org.eclipse.fx.ui.controls"/>
+      <plugin id="org.eclipse.fx.ui.databinding"/>
+      <plugin id="org.eclipse.fx.ui.di"/>
+      <plugin id="org.eclipse.fx.ui.panes"/>
+      <plugin id="org.eclipse.fx.ui.services"/>
+      <plugin id="org.eclipse.fx.ui.theme"/>
+      <plugin id="org.eclipse.osgi"/>
+      <plugin id="org.eclipse.osgi.compatibility.state" fragment="true"/>
+      <plugin id="org.eclipse.osgi.services"/>
+      <plugin id="org.powerloom"/>
+      <plugin id="org.powerloom.service"/>
+      <plugin id="org.slf4j.api"/>
+      <plugin id="org.slf4j.ext"/>
+      <plugin id="org.slf4j.jcl"/>
+      <plugin id="org.slf4j.jul"/>
+      <plugin id="org.slf4j.log4j"/>
+   </plugins>
+
+   <configurations>
+      <plugin id="org.eclipse.core.runtime" autoStart="true" startLevel="0" />
+      <plugin id="org.eclipse.equinox.common" autoStart="true" startLevel="2" />
+      <plugin id="org.eclipse.equinox.ds" autoStart="true" startLevel="2" />
+      <plugin id="org.eclipse.equinox.event" autoStart="true" startLevel="2" />
+      <plugin id="org.eclipse.equinox.simpleconfigurator" autoStart="true" startLevel="1" />
+   </configurations>
+
+   <preferencesInfo>
+      <targetfile overwrite="false"/>
+   </preferencesInfo>
+
+   <cssInfo>
+   </cssInfo>
+
+</product>
