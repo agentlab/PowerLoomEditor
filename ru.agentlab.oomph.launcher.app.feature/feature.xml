@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="ru.agentlab.oomph.launcher.app.feature"
+      label="ru.agentlab.oomph.launcher.product Application Feature"
+      version="1.0.0.qualifier"
+      provider-name="AgentLab">
+
+   <description url="http://www.efxclipse.org">
+      TODO FILL WITH CONTENT
+   </description>
+
+   <copyright url="http://www.efxclipse.org">
+      TODO FILL WITH CONTENT
+   </copyright>
+
+   <license url="http://www.efxclipse.org">
+      TODO FILL WITH CONTENT
+   </license>
+
+   <requires>
+      <import plugin="org.eclipse.core.runtime"/>
+      <import plugin="org.eclipse.equinox.app"/>
+      <import plugin="org.eclipse.osgi"/>
+      <import plugin="org.eclipse.e4.core.contexts" version="1.1.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.e4.core.di" version="1.1.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.fx.ui.di"/>
+      <import plugin="org.eclipse.fx.core.di" version="3.0.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.fx.osgi.util" version="3.0.0" match="greaterOrEqual"/>
+      <import plugin="javax.annotation"/>
+      <import plugin="javax.inject"/>
+   </requires>
+
+   <plugin
+         id="ru.agentlab.oomph.launcher"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+</feature>

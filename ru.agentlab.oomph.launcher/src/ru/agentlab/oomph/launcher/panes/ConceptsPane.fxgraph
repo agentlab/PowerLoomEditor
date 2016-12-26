@@ -1,0 +1,16 @@
+package ru.agentlab.oomph.launcher.panes
+
+import ru.agentlab.oomph.launcher.paneControllers.ConceptsPaneController
+import javafx.scene.control.TitledPane
+import ru.agentlab.oomph.launcher.MainApplication
+import javafx.scene.control.ListView
+import edu.isi.stella.Stella_Object
+
+component ConceptsPane controlledby ConceptsPaneController {
+	TitledPane {
+		text : const MainApplication#CONCEPTS_PANE_NAME,
+		prefHeight : 300,
+		prefWidth : 250,
+		content : ListView<Stella_Object>
+	}
+}

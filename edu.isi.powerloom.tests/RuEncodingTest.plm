@@ -1,0 +1,18 @@
+(defmodule "TEST"
+	:documentation "Preliminary OWL native representation of ISO 15926-2,
+	destined for the ISO 15926-8 representation of ISO 15926-2 entity types. This file was provided by DNV IRM,
+	based on work in the IOHN project."
+	:includes ("PL-KERNEL-KB")
+)
+
+(in-module "TEST")
+
+(DEFRELATION hasTitle ((?class Class) (?text STRING)))
+
+(DEFCONCEPT UseCase)
+
+(assert (UseCase UC1))
+(assert (hasTitle UC1 "Установка нового оборудования"))
+
+(assert (UseCase UC2))
+(assert (hasTitle UC2 "Обновление агента на подстанции"))

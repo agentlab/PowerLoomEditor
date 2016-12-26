@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: ISI PowerLoom Tests
+Bundle-SymbolicName: edu.isi.powerloom.tests
+Bundle-Version: 1.0.0.qualifier
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-Vendor: AgentLab
+Import-Package: edu.isi.powerloom,
+ edu.isi.powerloom.logic,
+ edu.isi.stella,
+ org.junit;version="4.12.0",
+ org.pl.stellaj,
+ org.powerloom.service
