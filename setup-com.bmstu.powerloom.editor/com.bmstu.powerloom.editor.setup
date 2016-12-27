@@ -35,7 +35,7 @@
   <stream name="master">
     <setupTask
         xsi:type="git:GitCloneTask"
-        id="com.bmstu.powerloom.editor"
+        id="com.bmstu.powerloom.editor.git.clone"
         remoteURI="agentlab/PowerLoomEditor">
       <annotation
           source="http://www.eclipse.org/oomph/setup/InducedChoices">
@@ -58,6 +58,48 @@
         xsi:type="setup.targlets:TargletTask">
       <targlet
           name="${scope.project.label}">
+        <annotation
+            source="http:/www.eclipse.org/oomph/targlets/TargetDefinitionGenerator">
+          <detail
+              key="location">
+            <value>${com.bmstu.powerloom.editor.git.clone.location/targets/com.bmstu.powerloom.editor.target/com.bmstu.powerloom.editor.target}</value>
+          </detail>
+          <detail
+              key="includeAllPlatforms">
+            <value>true</value>
+          </detail>
+          <detail
+              key="includeSource">
+            <value>true</value>
+          </detail>
+          <detail
+              key="generateVersions">
+            <value>false</value>
+          </detail>
+          <detail
+              key="generateImplicitUnits">
+            <value>true</value>
+          </detail>
+          <detail
+              key="includeMode">
+            <value>slicer</value>
+          </detail>
+        </annotation>
+        <requirement
+            name="edu.isi.powerloom.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.fx.core.di"/>
+        <requirement
+            name="org.eclipse.fx.core.di.context"/>
+        <requirement
+            name="org.eclipse.fx.runtime.e4fx.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.fx.ui.di"/>
+        <requirement
+            name="*"/>
+        <sourceLocator
+            rootFolder="${com.bmstu.powerloom.editor.git.clone.location}"
+            locateNestedProjects="true"/>
         <repositoryList
             name="Neon">
           <repository
