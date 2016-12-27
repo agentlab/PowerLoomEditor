@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<site>	  
-   <feature id="edu.isi.powerloom.feature"><category name="edu.isi.powerloom.category"/></feature>
-   <feature id="edu.isi.powerloom.feature.source"><category name="edu.isi.powerloom.category"/></feature>
-   
-   <category-def name="edu.isi.powerloom.category" label="ISI PowerLoom"/>
-</site>

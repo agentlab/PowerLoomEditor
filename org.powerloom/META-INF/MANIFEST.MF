@@ -1,9 +1,0 @@
-Manifest-Version: 1.0
-Bundle-ManifestVersion: 2
-Bundle-Name: AgentLab PowerLoom
-Bundle-SymbolicName: org.powerloom
-Bundle-Version: 4.0.6.qualifier
-Bundle-ActivationPolicy: lazy
-Export-Package: org.powerloom
-Bundle-RequiredExecutionEnvironment: JavaSE-1.8
-Bundle-Vendor: AgentLab
