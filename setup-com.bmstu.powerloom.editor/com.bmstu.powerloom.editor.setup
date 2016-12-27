@@ -57,41 +57,14 @@
     <setupTask
         xsi:type="setup.targlets:TargletTask">
       <targlet
-          name="${scope.project.label}"
-          activeRepositoryList="${eclipse.target.platform}"
-          includeAllPlatforms="true">
-        <annotation
-            source="http:/www.eclipse.org/oomph/targlets/TargetDefinitionGenerator">
-          <detail
-              key="location">
-            <value>${ru.agentlab.oomph.launcher.git.clone.location/releng/ru.agentlab.oomph.launcher.releng/ru.agentlab.oomph.launcher.releng.target}</value>
-          </detail>
-          <detail
-              key="includeAllPlatforms">
-            <value>true</value>
-          </detail>
-          <detail
-              key="includeSource">
-            <value>true</value>
-          </detail>
-          <detail
-              key="generateVersions">
-            <value>false</value>
-          </detail>
-          <detail
-              key="generateImplicitUnits">
-            <value>true</value>
-          </detail>
-          <detail
-              key="includeMode">
-            <value>slicer</value>
-          </detail>
-        </annotation>
-        <requirement
-            name="*"/>
-        <sourceLocator
-            rootFolder="${ru.agentlab.oomph.launcher.git.clone.location}"/>
+          name="${scope.project.label}">
+        <repositoryList
+            name="Neon">
+          <repository
+              url="http://www.agentlab.ru/p2/orbit/edu.isi.powerloom/"/>
+        </repositoryList>
       </targlet>
+      <description></description>
     </setupTask>
     <setupTask
         xsi:type="setup.workingsets:WorkingSetTask">
