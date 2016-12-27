@@ -1,8 +1,8 @@
-package ru.agentlab.oomph.launcher.panes
+package com.bmstu.powerloom.editor.panes
 
-import ru.agentlab.oomph.launcher.paneControllers.PropositionsPaneController
+import com.bmstu.powerloom.editor.paneControllers.PropositionsPaneController
 import javafx.scene.control.TitledPane
-import ru.agentlab.oomph.launcher.MainApplication
+import com.bmstu.powerloom.editor.MainApplication
 import javafx.scene.control.ListView
 import edu.isi.stella.Stella_Object
 

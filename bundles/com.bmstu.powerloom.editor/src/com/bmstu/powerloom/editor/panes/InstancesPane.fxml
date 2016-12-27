@@ -8,7 +8,7 @@
 <?import javafx.scene.control.TitledPane?>
 <?import ru.agentlab.oomph.launcher.MainApplication?>
 
-<TitledPane xmlns:fx="http://javafx.com/fxml" fx:controller="ru.agentlab.oomph.launcher.paneControllers.InstancesPaneController" prefHeight="300" prefWidth="250">
+<TitledPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.bmstu.powerloom.editor.paneControllers.InstancesPaneController" prefHeight="300" prefWidth="250">
 
 	<text><MainApplication fx:constant="INSTANCES_PANE_NAME" /></text>
 	<content>

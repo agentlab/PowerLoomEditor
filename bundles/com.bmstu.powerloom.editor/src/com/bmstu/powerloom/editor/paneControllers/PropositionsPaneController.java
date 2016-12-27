@@ -1,7 +1,7 @@
 /**
  *
  */
-package ru.agentlab.oomph.launcher.paneControllers;
+package com.bmstu.powerloom.editor.paneControllers;
 
 /**
  * @author Kiryakov_E

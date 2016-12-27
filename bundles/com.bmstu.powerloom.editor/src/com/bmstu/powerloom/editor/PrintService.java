@@ -1,4 +1,4 @@
-package ru.agentlab.oomph.launcher;
+package com.bmstu.powerloom.editor;
 
 public interface PrintService {
 	public void print(String message);

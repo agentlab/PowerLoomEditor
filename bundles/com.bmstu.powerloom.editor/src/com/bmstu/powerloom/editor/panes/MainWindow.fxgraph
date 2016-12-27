@@ -1,0 +1,13 @@
+package com.bmstu.powerloom.editor.panes
+
+import javafx.scene.layout.BorderPane
+import com.bmstu.powerloom.editor.paneControllers.MainWindowController
+
+component MainWindow controlledby MainWindowController {
+	BorderPane {
+		top : include com.bmstu.powerloom.editor.panes.TopPane,
+		center : include com.bmstu.powerloom.editor.panes.PropositionsPane,
+		bottom : include com.bmstu.powerloom.editor.panes.RulesPane
+	}
+
+}

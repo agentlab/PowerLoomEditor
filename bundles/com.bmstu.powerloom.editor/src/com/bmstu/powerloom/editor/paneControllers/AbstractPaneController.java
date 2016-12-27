@@ -1,15 +1,16 @@
 /**
  *
  */
-package ru.agentlab.oomph.launcher.paneControllers;
+package com.bmstu.powerloom.editor.paneControllers;
 
 import javax.annotation.PostConstruct;
 import javax.inject.Inject;
 
 import org.eclipse.e4.core.contexts.IEclipseContext;
 
+import com.bmstu.powerloom.editor.PrintService;
+
 import javafx.fxml.FXML;
-import ru.agentlab.oomph.launcher.PrintService;
 
 /**
  * @author Kisareva_N

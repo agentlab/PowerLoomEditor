@@ -1,4 +1,4 @@
-package ru.agentlab.oomph.launcher;
+package com.bmstu.powerloom.editor;
 
 public class PrintServiceImpl implements PrintService {
 	@Override

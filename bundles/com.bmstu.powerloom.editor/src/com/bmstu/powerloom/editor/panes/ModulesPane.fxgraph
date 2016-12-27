@@ -1,10 +1,10 @@
-package ru.agentlab.oomph.launcher.panes
+package com.bmstu.powerloom.editor.panes
 
 import javafx.scene.control.TitledPane
 import javafx.scene.control.TreeView
 import javafx.scene.control.TreeItem
-import ru.agentlab.oomph.launcher.paneControllers.ModulesLeftPaneController
-import ru.agentlab.oomph.launcher.MainApplication
+import com.bmstu.powerloom.editor.paneControllers.ModulesLeftPaneController
+import com.bmstu.powerloom.editor.MainApplication
 
 component ModulesPane controlledby ModulesLeftPaneController {
 	TitledPane {

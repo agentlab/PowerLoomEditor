@@ -1,4 +1,4 @@
-package ru.agentlab.oomph.launcher;
+package com.bmstu.powerloom.editor;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;

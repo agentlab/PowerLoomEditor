@@ -1,0 +1,15 @@
+package com.bmstu.powerloom.editor.panes
+
+import com.bmstu.powerloom.editor.paneControllers.TopPaneController
+import javafx.scene.layout.FlowPane
+
+component TopPane controlledby TopPaneController {
+	FlowPane {
+		children : [
+			include com.bmstu.powerloom.editor.panes.ModulesPane,
+			include com.bmstu.powerloom.editor.panes.ConceptsPane,
+			include com.bmstu.powerloom.editor.panes.RelationsPane,
+			include com.bmstu.powerloom.editor.panes.InstancesPane
+		]
+	}
+}
